@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importador RGSF
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="importador.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+
+      <h1 class="title-1">Importador</h1>
+    </header>
+
+    <main class="main">
+      <div id="file-input-container">
+        <div class="cols">
+
+          <label>
+            
+            <span id="file-input-decoration"><span>Importar Novo Ficheiro</span></span>
+            <input type="file" id="file-input" single required></input>
+          </label>
+
+          <button class="btn-upload">Upload</button>
+        </div>
+      </div>
+      <div id="file-info-container" class="form-container hideme">
+
+        <progress class="progress" id="file" max="100" value="70">70%</progress>
+
+        <ul class="thumbs">
+          <li>
+            <img src="https://picsum.photos/160/100" alt="" width="160" heigth="100">
+          </li>
+          <li>
+            <img src="https://picsum.photos/160/100" alt="" width="160" heigth="100">
+          </li>
+          <li class="info" data-total="3">
+            <img src="https://picsum.photos/160/100" alt="" width="160" heigth="100">
+          </li>
+        </ul>
+
+        <h2 class="title-2">Informação do Ficheiro</h2>
+
+        <form class="form" id="form">
+
+          <label class="file-name">
+
+            <span class="label">Nome do Ficheiro</span>
+
+            <input type="text" required>
+          </label>
+
+          <label class="year">
+
+            <span class="label">Ano</span>
+
+            <select name="year" id="year" required>
+
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </label>
+
+          <label class="file-type">
+
+            <span class="label">Tipo de Ficheiro</span>
+
+            <select name="file-type" id="file-type" required>
+
+              <!-- 
+              <option value="2025">jpg</option>
+              <option value="2025">png</option>
+              <option value="2025">webp</option>
+              <option value="2025">ppt</option>
+              <option value="2025">pdf</option>
+            -->
+              <option value="apresentacao">apresentação</option>
+              <option value="documento">documento</option>
+              <option value="imagem">imagem</option>
+              <option value="video">video</option>
+              
+            </select>
+          </label>
+
+          <label class="language">
+
+            <span class="label">Idioma</span>
+
+            <select name="language" id="language" required>
+
+              <option value="2025">pt</option>
+              <option value="2025">es</option>
+              <option value="2025">fr</option>
+              <option value="2025">en</option>
+            </select>
+          </label>
+
+          <label class="project">
+
+            <span class="label">Projecto</span>
+
+            <ul class="tag-list">
+              <li>
+                <button class="btn-tag">
+                  <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                      d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12">
+                    </path>
+                  </svg>
+                </button>
+                <span>Tag 1</span>
+              </li>
+
+              <li>
+                <button class="btn-tag">
+                  <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                      d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12">
+                    </path>
+                  </svg>
+                </button>
+                <span>Tag 2</span>
+              </li>
+            </ul>
+
+            <select name="projecto" id="projecto" required>
+
+              <option value="pt">Projecto 1</option>
+              <option value="es">Projecto 2</option>
+              <option value="fr">Projecto 3</option>
+              <option value="en">Projecto 4</option>
+            </select>
+          </label>
+
+          <label class="client">
+
+            <span class="label">Cliente</span>
+
+            <select name="client" id=client required>
+
+              <option value="cliente1">Cliente 1</option>
+              <option value="cliente2">Cliente 2</option>
+              <option value="cliente3">Cliente 3</option>
+              <option value="cliente4">Cliente 4</option>
+            </select>
+          </label>
+
+          <label class="comment">
+
+            <span>7. Observações</span>
+
+            <textarea name="observacoes" id="observacoes"></textarea>
+          </label>
+
+          <div class="action">
+            <button class="btn-action">Importar ficheiro</button>
+          </div>
+        </form>
+      </div>
+
+
+    </main>
+  </div>
+  <script>
+    document.querySelector('.btn-upload').addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('#file-info-container').classList.remove('hideme');
+      document.querySelector('#file-input-container').classList.add('hideme');
+    });
+
+    /* para aplicar a classe hideme ao input e removê-la do container de informação do ficheiro */
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('#file-info-container').classList.remove('hideme');
+      document.querySelector('#file-input-container').classList.add('hideme');
+    });
+  </script>
+</body>
+
+</html>

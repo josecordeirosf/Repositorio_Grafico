@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositório Gráfico SoftFinança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navigation-menu">
+        <div id="title-container" class="flexhor">
+
+            <img id="logotipo-mini" src="./imgs/tecla-logo-sf-100x100.png"
+                alt="Ícone do logotipo SoftFinança, composto de uma forma quadrada com cantos arredondados onde vê-se parcialmente a letra 'S' estilizada, em vermelho sobre um fundo escuro e desfocada, ">
+
+            <div id="page-title" class="flexver">
+                <h1>Repositório Gráfico</h1>
+                <h2>SoftFinança</h2>
+            </div>
+        </div>
+
+        <div class="nav-item-container">
+            <a id="link-home" href="index.html" class="navitems">
+                <svg class="nav-icons" id="nav-home-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><!-- Icon from Huge Icons by Hugeicons - undefined --><path  d="m3.164 11.35l.836.209l.457 4.542c.258 2.566.387 3.849 1.244 4.624s2.147.775 4.726.775h3.146c2.58 0 3.87 0 4.726-.775c.857-.775.986-2.058 1.244-4.625L20 11.56l.836-.21a1.537 1.537 0 0 0 .509-2.75l-8.198-5.737a2 2 0 0 0-2.294 0L2.655 8.6a1.537 1.537 0 0 0 .51 2.75" color="currentColor"/></svg>
+                <span class="nav-item-title">Home</span>
+
+            </a>
+        </div>
+        <div class="nav-item-container">
+            <a id="link-fav" href="index.html" class="navitems">
+                <svg class="nav-icons fav-icon" id="nav-fav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path
+                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                        </svg>
+                <span class="nav-item-title">Favoritos</span>
+
+            </a>
+        </div>
+        <div class="nav-item-container">
+            <details class="nav-details" id="ficheiros-details">
+                <summary class="navitems">
+                    <svg class="nav-icons" id="nav-file-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><!-- Icon from Huge Icons by Hugeicons - undefined --><g fill="none" stroke-linecap="round" stroke-linejoin="round" ><path d="M14.499 19h-2c-2.828 0-4.243 0-5.121-.879c-.879-.878-.879-2.293-.879-5.121V8c0-2.828 0-4.243.879-5.121C8.256 2 9.67 2 12.499 2h1.343c.818 0 1.226 0 1.594.152c.367.152.657.442 1.235 1.02l2.657 2.656c.578.578.867.868 1.019 1.235s.152.776.152 1.594V13c0 2.828 0 4.243-.879 5.121c-.878.879-2.293.879-5.12.879"/><path d="M14.999 2.5v1c0 1.886 0 2.828.586 3.414s1.528.586 3.414.586h1M6.499 5a3 3 0 0 0-3 3v8c0 2.828 0 4.243.879 5.121C5.256 22 6.67 22 9.499 22h5a3 3 0 0 0 3-3M10 11h4m-4 4h7"/></g></svg>
+                    
+                    <span class="nav-item-title">Ficheiros</span>
+                    <span class="contador" id="apresentacao-c">142</span>
+                </summary>
+                <ul class="flexver">
+                    <li>Apresentações<span class="contador" id="apresentacao-c">33</span></li>
+                    <li>Word<span class="contador" id="word-c">54</span></li>
+                    <li>Grafismos<span class="contador" id="grafismos-c">43</span></li>
+                    <li>PDF<span class="contador" id="pdf-c">12</span></li>
+                </ul>
+            </details>
+        </div>
+        <div class="nav-item-container">
+            <details class="nav-details" id="cliente-details">
+                <summary class="navitems">
+                    <svg class="nav-icons" id="nav-cliente-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><!-- Icon from Huge Icons by Hugeicons - undefined --><path d="M14.746 6.496c0 1.52 1.23 2.75 2.75 2.75s2.75-1.23 2.75-2.75s-1.23-2.75-2.75-2.75s-2.75 1.23-2.75 2.75m1.5 0a1.25 1.25 0 1 1 2.501.001a1.25 1.25 0 0 1-2.5 0m-7.5 4.5c0 1.79 1.46 3.25 3.25 3.25s3.25-1.46 3.25-3.25s-1.46-3.25-3.25-3.25s-3.25 1.46-3.25 3.25m1.5 0c0-.96.79-1.75 1.75-1.75s1.75.79 1.75 1.75s-.79 1.75-1.75 1.75s-1.75-.79-1.75-1.75m5.5 8.5c0 .41.34.75.75.75v.01c.41 0 .75-.34.75-.75c0-1.35-.54-2.48-1.47-3.11c-2.25-1.5-5.31-1.5-7.57 0c-.93.62-1.46 1.76-1.46 3.1c0 .41.34.75.75.75s.75-.35.75-.75s.08-1.38.8-1.86c1.76-1.17 4.15-1.16 5.9 0c.72.49.8 1.45.8 1.86m5.75-4.3c-.41 0-.75-.29-.75-.7c0-.57-.09-1.42-.71-1.88c-.76-.57-1.64-.87-2.54-.87c-.41 0-.75-.34-.75-.75s.34-.75.75-.75c1.23 0 2.42.4 3.45 1.17c.84.64 1.3 1.7 1.3 2.98c0 .41-.34.8-.75.8m-19 0c-.41 0-.75-.29-.75-.7c0-1.38.46-2.44 1.3-3.08c1.03-.77 2.22-1.17 3.45-1.17c.41 0 .75.34.75.75s-.34.75-.75.75c-.91 0-1.79.3-2.55.87c-.61.46-.7 1.31-.7 1.78c0 .41-.34.8-.75.8m1.25-8.7c0 1.52 1.23 2.75 2.75 2.75s2.75-1.23 2.75-2.75s-1.23-2.75-2.75-2.75s-2.75 1.23-2.75 2.75m1.5 0a1.25 1.25 0 1 1 2.501.001a1.25 1.25 0 0 1-2.5 0" color="currentColor"/></svg>
+                    <span class="nav-item-title">Cliente</span>
+                </summary>
+                <ul class="flexver">
+                    <li>Cliente 1<span class="contador" id="cli1-c"></span></li>
+                    <li>Cliente 2<span class="contador" id="cli2-c"></span></li>
+                    <li>Cliente 3<span class="contador" id="cli3-c"></span></li>
+                </ul>
+            </details>
+        </div>
+        <div class="nav-item-container">
+            <details  class="nav-details" id="projectos-details">
+                <summary class="navitems">
+                    <svg class="nav-icons" id="nav-projects-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><!-- Icon from Lucide by Lucide Contributors - https://github.com/lucide-icons/lucide/blob/main/LICENSE --><g  stroke-linecap="round" stroke-linejoin="round" "><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3zM7 16.5l-4.74-2.85M7 16.5l5-3m-5 3v5.17m5-8.17V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5zm5 3l-5-3m5 3l4.74-2.85M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3l5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0zM12 8L7.26 5.15M12 8l4.74-2.85M12 13.5V8"/></g></svg>
+                    <span class="nav-item-title">Projectos</span>
+                </summary>
+                <ul class="flexver">
+                    <li>Projecto 1<span class="contador" id="proj1-c"></span></li>
+                    <li>Projecto 2<span class="contador" id="proj2-c"></span></li>
+                    <li>projecto 3<span class="contador" id="proj3-c"></span></li>
+                </ul>
+            </details>
+        </div>
+        <div class="nav-item-container">
+            <details class="nav-details" id="projectos-details">
+                <summary class="navitems">
+                    <svg class="nav-icons" id="nav-year-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24">
+                            <!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+                            <path 
+                                d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2V5a2 2 0 0 0-2-2m0 16H5V9h14zm0-12H5V5h14z" />
+                        </svg>
+                    <span class="nav-item-title">Ano</span>
+                </summary>
+                <ul class="flexver">
+                    <li>2025<span class="contador" id="proj1-c">189</span></li>
+                    <li>2024<span class="contador" id="proj2-c">73</span></li>
+                    <li>2024<span class="contador" id="proj3-c">25</span></li>
+                    <li>2023<span class="contador" id="proj3-c">15</span></li>
+                </ul>
+            </details>
+        </div>
+
+        <span id="menu-back-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20z"/></svg>
+        </span>
+    </nav>
+    <div id="mobile-overlay">
+            <div id="mobile-buttons-container">
+                <button id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                        <path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
+                    </svg>
+                </button>
+                <button id="mobile-search-btn">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <!-- Icon from Lineicons by Lineicons - https://github.com/LineiconsHQ/Lineicons/blob/main/LICENSE.md -->
+                        <path
+                            d="M60.1 49.5L49.8 39.2c-1.4-1.4-3.3-2.2-5.3-2.2c-1.2 0-2.4.3-3.4.8l-5.2-5.2c5.9-7.5 5.4-18.4-1.5-25.4C27-.1 14.8-.1 7.4 7.4C-.1 14.9-.1 27 7.4 34.5C11.1 38.1 16 40 20.9 40c4.2 0 8.4-1.4 11.8-4.1l5.2 5.2c-.5 1-.8 2.2-.8 3.4c0 2 .8 3.9 2.2 5.3l10.3 10.3c1.5 1.5 3.4 2.2 5.3 2.2s3.8-.7 5.3-2.2c2.8-2.9 2.8-7.7-.1-10.6M10.5 31.2c-5.7-5.7-5.7-15 0-20.7c2.9-2.9 6.6-4.3 10.3-4.3s7.5 1.4 10.4 4.3c5.7 5.7 5.7 15 0 20.7s-15 5.7-20.7 0m46.4 25.7c-1.1 1.1-3 1.2-4.2 0L42.4 46.6q-.9-.9-.9-2.1t.9-2.1c.9-.9 1.3-.9 2.1-.9q1.2 0 2.1.9l10.3 10.3c1.1 1.2 1.1 3 0 4.2" />
+                    </svg>
+                </button>
+                <button id="mobile-add-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                        <path fill="currentColor" d="M11 21v-8H3v-2h8V3h2v8h8v2h-8v8z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    <div class="wrapper">
+
+        <banner class="header viewer-header">
+            <form class="searchbox">
+                <span class="search-icon-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <!-- Icon from Lineicons by Lineicons - https://github.com/LineiconsHQ/Lineicons/blob/main/LICENSE.md -->
+                        <path
+                            d="M60.1 49.5L49.8 39.2c-1.4-1.4-3.3-2.2-5.3-2.2c-1.2 0-2.4.3-3.4.8l-5.2-5.2c5.9-7.5 5.4-18.4-1.5-25.4C27-.1 14.8-.1 7.4 7.4C-.1 14.9-.1 27 7.4 34.5C11.1 38.1 16 40 20.9 40c4.2 0 8.4-1.4 11.8-4.1l5.2 5.2c-.5 1-.8 2.2-.8 3.4c0 2 .8 3.9 2.2 5.3l10.3 10.3c1.5 1.5 3.4 2.2 5.3 2.2s3.8-.7 5.3-2.2c2.8-2.9 2.8-7.7-.1-10.6M10.5 31.2c-5.7-5.7-5.7-15 0-20.7c2.9-2.9 6.6-4.3 10.3-4.3s7.5 1.4 10.4 4.3c5.7 5.7 5.7 15 0 20.7s-15 5.7-20.7 0m46.4 25.7c-1.1 1.1-3 1.2-4.2 0L42.4 46.6q-.9-.9-.9-2.1t.9-2.1c.9-.9 1.3-.9 2.1-.9q1.2 0 2.1.9l10.3 10.3c1.1 1.2 1.1 3 0 4.2" />
+                    </svg>
+                </span>
+                <input type="text" placeholder="Procurar por ficheiro, cliente, ano ou projecto...">
+            </form>
+            <button id="addbtn" type="addfile">
+                Importar novo ficheiro
+            </button>
+        </banner>
+
+        <main class="main">
+            <section class="card-section" id="favsection">
+                <div class="card-section-header">
+                    <span class="fav-icon-container ">
+                        <svg class="fav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path
+                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                        </svg>
+                    </span>
+                    <h1>Favoritos</h1>
+                    <button class="card-header-button" id="fav-button">Visualizar Todos >>></button>
+                </div>
+                <div id="fav-cards-list-overlay">
+                    <div class="media-cards-container fav-container">
+                
+                        <div class="media-card">
+                            <span class="media-card-miniature">
+                                <img src="https://picsum.photos/315/200" alt="">
+                            </span>
+                            <div class="media-card-data-container">
+                                <div class="media-card-info" >
+                                    <p class="media-card-name">Template_Media.ppt</p>
+                                    <p class="media-card-date">04/12/2025</p>
+                                </div>
+                                <span class="fav-icon-container ">
+                                    <svg class="fav-icon enabled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                        <path
+                                            d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                    </svg>
+                                </span>
+                                <span class="media-card-link-container">
+                                    <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 24 24">
+                                        <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                        <path fill="currentColor"
+                                            d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                        <path fill="currentColor"
+                                            d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                    </svg>
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="media-card">
+                            <span class="media-card-miniature"><img src="https://picsum.photos/311/200" alt=""></span>
+                            <div class="media-card-data-container">
+                                <div class="media-card-info">
+                                    <p class="media-card-name">Template_Media.ppt</p>
+                                    <p class="media-card-date">04/12/2025</p>
+                                </div>
+                                <span class="fav-icon-container ">
+                                    <svg class="fav-icon enabled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                        <path
+                                            d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                    </svg>
+                                </span>
+                                <span class="media-card-link-container">
+                                    <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 24 24">
+                                        <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                        <path fill="currentColor"
+                                            d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                        <path fill="currentColor"
+                                            d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="media-card">
+                            <span class="media-card-miniature"><img src="https://picsum.photos/318/200" alt=""></span>
+                            <div class="media-card-data-container">
+                                <div class="media-card-info">
+                                    <p class="media-card-name">Template_Media.ppt</p>
+                                    <p class="media-card-date">04/12/2025</p>
+                                </div>
+                                <span class="fav-icon-container ">
+                                    <svg class="fav-icon enabled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                        <path
+                                            d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                    </svg>
+                                </span>
+                                <span class="media-card-link-container">
+                                    <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 24 24">
+                                        <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                        <path fill="currentColor"
+                                            d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                        <path fill="currentColor"
+                                            d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="media-card">
+                            <span class="media-card-miniature"><img src="https://picsum.photos/315/202" alt=""></span>
+                            <div class="media-card-data-container">
+                                <div class="media-card-info">
+                                    <p class="media-card-name">Template_Media.ppt</p>
+                                    <p class="media-card-date">04/12/2025</p>
+                                </div>
+                                <span class="fav-icon-container ">
+                                    <svg class="fav-icon enabled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                        <path
+                                            d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                    </svg>
+                                </span>
+                                <span class="media-card-link-container">
+                                    <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 24 24">
+                                        <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                        <path fill="currentColor"
+                                            d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                        <path fill="currentColor"
+                                            d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="media-card">
+                            <span class="media-card-miniature"><img src="https://picsum.photos/317/200" alt=""></span>
+                            <div class="media-card-data-container">
+                                <div class="media-card-info">
+                                    <p class="media-card-name">Template_Media.ppt</p>
+                                    <p class="media-card-date">04/12/2025</p>
+                                </div>
+                                <span class="fav-icon-container ">
+                                    <svg class="fav-icon enabled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                        <path
+                                            d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                    </svg>
+                                </span>
+                                <span class="media-card-link-container">
+                                    <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 24 24">
+                                        <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                        <path fill="currentColor"
+                                            d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                        <path fill="currentColor"
+                                            d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="media-card">
+                            <span class="media-card-miniature"><img src="https://picsum.photos/313/198" alt=""></span>
+                            <div class="media-card-data-container">
+                                <div class="media-card-info">
+                                    <p class="media-card-name">Template_Media.ppt</p>
+                                    <p class="media-card-date">04/12/2025</p>
+                                </div>
+                                <span class="fav-icon-container ">
+                                    <svg class="fav-icon enabled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                        <path
+                                            d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                    </svg>
+                                </span>
+                                <span class="media-card-link-container">
+                                    <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 24 24">
+                                        <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                        <path fill="currentColor"
+                                            d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                        <path fill="currentColor"
+                                            d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- Aqui é a secção onde ficam as últimas actualizações -->
+            <section class="card-section" id="updatessection">
+                <div class="card-section-header">
+                    <span class="update-icon-container ">
+                        <svg class="update-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 24 24">
+                            <!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+                            <path fill="currentColor"
+                                d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2V5a2 2 0 0 0-2-2m0 16H5V9h14zm0-12H5V5h14z" />
+                        </svg>
+                    </span>
+                    <h1>Últimas Actualizações</h1>
+                </div>
+                <div class="media-cards-container update-container">
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/315/198" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/313/200" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/316/199" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/315/199" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/314/199" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/314/201" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/314/200" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/316/201" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="media-card">
+                        <span class="media-card-miniature"><img src="https://picsum.photos/315/201" alt=""></span>
+                        <div class="media-card-data-container">
+                            <div class="media-card-info">
+                                <p class="media-card-name">Template_Media.ppt</p>
+                                <p class="media-card-date">04/12/2025</p>
+                            </div>
+                            <span class="fav-icon-container ">
+                                <svg class="fav-icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                                    <path
+                                        d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2t.863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.162t1.012-.763z" />
+                                </svg>
+                            </span>
+                            <span class="media-card-link-container">
+                                <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 24 24">
+                                    <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                                    <path fill="currentColor"
+                                        d="M15.729 3.884c1.434-1.44 3.532-1.47 4.693-.304c1.164 1.168 1.133 3.28-.303 4.72l-2.423 2.433a.75.75 0 0 0 1.062 1.059l2.424-2.433c1.911-1.919 2.151-4.982.303-6.838c-1.85-1.857-4.907-1.615-6.82.304L9.819 7.692c-1.911 1.919-2.151 4.982-.303 6.837a.75.75 0 1 0 1.063-1.058c-1.164-1.168-1.132-3.28.303-4.72z" />
+                                    <path fill="currentColor"
+                                        d="M14.485 9.47a.75.75 0 0 0-1.063 1.06c1.164 1.168 1.133 3.279-.303 4.72l-4.847 4.866c-1.435 1.44-3.533 1.47-4.694.304c-1.164-1.168-1.132-3.28.303-4.72l2.424-2.433a.75.75 0 0 0-1.063-1.059l-2.424 2.433c-1.911 1.92-2.151 4.982-.303 6.838c1.85 1.858 4.907 1.615 6.82-.304l4.847-4.867c1.911-1.918 2.151-4.982.303-6.837" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- <button class="action" type="button" popovertarget="infopopover" popovertargetaction="show">Showme</button> -->
+            <div id="infopopover" popover="auto">
+                <div id="popover-wrapper">
+                    <!-- <span id="popover-cleararea"><button class='giant-invisible-button' popovertarget="infopopover"
+                            popovertargetaction="hide"></button>
+                        </span> -->
+                    <div id="popover-content">
+                        <span id="popover-close-container">
+                            <button popovertarget="infopopover" popovertargetaction="hide" class="popover-close-btn">✕</button>
+                        </span>
+                        <span class="popover-media-miniature">
+                            <img src="https://picsum.photos/316/200" alt="">
+                        </span>
+                        <div class="popover-media-data-container media-id-container">
+                            <div class="popover-media-info">
+                                <p class="popover-media-name">Template_Media.ppt</p>
+                                <span class="info-dual-container">
+                                    <p class="popover-media-type">Apresentação
+                                    <p class="popover-media-date">04/12/2025</p>
+                                </span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="popover-media-data-container media-info-container">
+                            <div class="popover-media-info popover-media-info-list">
+                                <p class="popover-section-title">Informações</p>
+                                <span class="info-dual-container">
+                                    <p class="info-item">Cliente
+                                    <p class="info-item-conteudo">Montepio</p>
+                                </span>
+                                
+                                <span class="info-dual-container">
+                                    <p class="info-item">Projectos
+                                    <ul class="info-item-conteudo">
+                                        <li>Digital Signage</li>
+                                        <li>Monitorização ATM</li>
+                                    </ul>
+                                </span>
+                                <span class="info-dual-container">
+                                    <p class="info-item">Importado
+                                    <p class="info-item-conteudo">Fulano Tal</p>
+                                </span>
+                                <span class="info-dual-container">
+                                    <p class="info-item">Idioma
+                                    <p class="info-item-conteudo">Português</p>
+                                </span>
+                                
+                            </div>
+                        </div>
+                        <div class="popover-media-data-container media-obs-container">
+                            <div class="popover-media-info popover-media-obs">
+                                <p class="popover-section-title">Observações</p>
+                                <span class="info-single-container">
+                                    <p class="info-item-conteudo">Actualizado no slide 3; foi acrescentada a imagem da agência.</p>
+                                </span>
+                                
+                            </div>
+                        </div>
+                        <div class="popover-media-data-container media-version-container">
+                            <div class="popover-media-info popover-media-version-list">
+                                <p class="popover-section-title">Versões Anteriores</p>
+                                <span class="info-single-container">
+                                    <p class="info-version-conteudo">
+                                        <ul class="version-list">
+                                            <li>
+                                                <span class="version-date">01/04/2025
+                                                </span>
+                                                <span class="icon-info">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M12 7q.425 0 .713-.288T13 6t-.288-.712T12 5t-.712.288T11 6t.288.713T12 7m-1 8h2V9h-2zm-9 7V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm3.15-6H20V4H4v13.125zM4 16V4z"/></svg>
+                                                </span>
+                                                <span class="icon-download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="version-date">20/03/2025
+                                                </span>
+                                                <span class="icon-info">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M12 7q.425 0 .713-.288T13 6t-.288-.712T12 5t-.712.288T11 6t.288.713T12 7m-1 8h2V9h-2zm-9 7V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm3.15-6H20V4H4v13.125zM4 16V4z"/></svg>
+                                                </span>
+                                                <span class="icon-download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="version-date">18/03/2025
+                                                </span>
+                                                <span class="icon-info">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M12 7q.425 0 .713-.288T13 6t-.288-.712T12 5t-.712.288T11 6t.288.713T12 7m-1 8h2V9h-2zm-9 7V4q0-.825.588-1.412T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.587 1.413T20 18H6zm3.15-6H20V4H4v13.125zM4 16V4z"/></svg>
+                                                </span>
+                                                <span class="icon-download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="version-date">07/10/2024
+                                                </span>
+                                                <span class="icon-info icon-hidden">
+                                                </span>
+                                                <span class="icon-download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="version-date">10/02/2024
+                                                </span>
+                                                <span class="icon-info icon-hidden">
+                                                </span>
+                                                <span class="icon-download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </span>
+                                
+                            </div>
+                        </div>
+                        <div class="popover-buttons-container">
+                            <button class="popover-btn" id="popover-share-btn">Partilhar</button>
+                            <button class="popover-btn" id="popover-download-btn">Download</button>
+                        </div>
+                        <!-- <button style="margin:2rem 0 " popovertarget="infopopover" popovertargetaction="hide">Hide this.</button> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="cols">
+
+                <label>
+                    <span>Escolher ficheiro</span>
+                    <input type="file">
+                </label>
+
+                <button class="btn-upload">Upload</button>
+            </div> -->
+
+            <!-- <progress class="progress" id="file" max="100" value="70">70%</progress> -->
+
+            <!-- <ul class="thumbs">
+                <li>
+                    <img src="https://picsum.photos/315/200" alt="" width="160" heigth="100">
+                </li>
+                <li>
+                    <img src="https://picsum.photos/315/200" alt="" width="160" heigth="100">
+                </li>
+                <li class="info" data-total="3">
+                    <img src="https://picsum.photos/315/200" alt="" width="160" heigth="100">
+                </li>
+            </ul>
+
+            <h2 class="title-2">Informação do Ficheiro</h2>
+
+            <form class="form" id="form">
+
+                <label class="file-name">
+
+                    <span class="label">Nome do Ficheiro</span>
+
+                    <input type="text" required>
+                </label>
+
+                <label class="year">
+
+                    <span class="label">Ano</span>
+
+                    <select name="year" id="year" required>
+
+                        <option value="2025">2025</option>
+                        <option value="2025">2024</option>
+                        <option value="2025">2023</option>
+                        <option value="2025">2022</option>
+                        <option value="2025">2021</option>
+                    </select>
+                </label>
+
+                <label class="file-type">
+
+                    <span class="label">Tipo de Ficheiro</span>
+
+                    <select name="file-type" id="file-type" required>
+
+                        <option value="2025">jpg</option>
+                        <option value="2025">png</option>
+                        <option value="2025">webp</option>
+                        <option value="2025">ppt</option>
+                        <option value="2025">pdf</option>
+                    </select>
+                </label>
+
+                <label class="language">
+
+                    <span class="label">Idioma</span>
+
+                    <select name="language" id="language" required>
+
+                        <option value="2025">pt</option>
+                        <option value="2025">es</option>
+                        <option value="2025">fr</option>
+                        <option value="2025">en</option>
+                    </select>
+                </label>
+
+                <label class="project">
+
+                    <span class="label">Projecto</span>
+
+                    <ul class="tag-list">
+                        <li>
+                            <button class="btn-tag">
+                                <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 256 256">
+                                    <path fill="currentColor"
+                                        d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12">
+                                    </path>
+                                </svg>
+                            </button>
+                            <span>Tag 1</span>
+                        </li>
+
+                        <li>
+                            <button class="btn-tag">
+                                <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 256 256">
+                                    <path fill="currentColor"
+                                        d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12">
+                                    </path>
+                                </svg>
+                            </button>
+                            <span>Tag 2</span>
+                        </li>
+                    </ul>
+
+                    <select name="projecto" id="projecto" required>
+
+                        <option value="pt">Projecto 1</option>
+                        <option value="es">Projecto 2</option>
+                        <option value="fr">Projecto 3</option>
+                        <option value="en">Projecto 4</option>
+                    </select>
+                </label>
+
+                <label class="client">
+
+                    <span class="label">Cliente</span>
+
+                    <select name="client" id=client required>
+
+                        <option value="cliente1">Cliente 1</option>
+                        <option value="cliente2">Cliente 2</option>
+                        <option value="cliente3">Cliente 3</option>
+                        <option value="cliente4">Cliente 4</option>
+                    </select>
+                </label>
+
+                <label class="comment">
+
+                    <span>7. Observações</span>
+
+                    <textarea name="observacoes" id="observacoes"></textarea>
+                </label>
+
+                <div class="action">
+                    <button class="btn-action">Importar ficheiro</button>
+                </div>
+            </form> -->
+        </main>
+    </div>
+    <script>
+        document.querySelectorAll('.media-card-miniature').forEach(card => {
+            card.addEventListener('click', function (e) {
+                // Prevent click on popover close button or links from triggering
+                if (e.target.closest('[popovertarget]')) return;
+                document.getElementById('infopopover').showPopover();
+            });
+        });
+        // onload = () => document.getElementById('infopopover').showPopover(); // apenas para teste - abre o popover de exemplo depois de carregar a página.
+        document.querySelector('#mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.navigation-menu').classList.toggle('open');
+            // alert('Menu toggled!'); // Apenas para teste
+            document.querySelector('#mobile-overlay').classList.toggle('blockbg')
+        });
+        document.querySelector('#menu-back-arrow').addEventListener('click', function () {
+            document.querySelector('.navigation-menu').classList.toggle('open');
+            // alert('Menu toggled!'); // Apenas para teste
+            document.querySelector('#mobile-overlay').classList.toggle('blockbg')
+        });
+    </script>
+</body>
+
+</html>
