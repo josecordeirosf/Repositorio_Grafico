@@ -52,6 +52,7 @@ header.header{
         color: var(--text-color);
         outline: none;
         white-space: nowrap;
+        user-select: none;
         -webkit-user-select: none;
         cursor: pointer;
         font-weight: 300;
